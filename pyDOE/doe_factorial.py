@@ -74,7 +74,7 @@ def fullfact(levels):
         range_repeat //= levels[i]
         lvl = []
         for j in range(levels[i]):
-            lvl += [j]*level_repeat
+            lvl += [j]*int(level_repeat)
         rng = lvl*range_repeat
         level_repeat *= levels[i]
         H[:, i] = rng
